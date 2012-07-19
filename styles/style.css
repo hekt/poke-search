@@ -1,0 +1,319 @@
+@charset "utf-8";
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+ol,ul {list-style:none;}
+caption {text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym {border:0;}
+
+section,footer,header,article,nav,aside,hgroup,dialog{display:block;}
+
+@-webkit-keyframes 'apper' {
+    from {opacity:0}
+    to {opacity:1}
+}
+@-moz-keyframes 'apper' {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-ms-keyframes 'apper' {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-o-keyframes 'apper' {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@keyframes 'apper' {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+html{
+	background-color:#fafafa;
+    font-family:sans-serif;
+	}
+body{
+	width:680px;
+	margin: 4em auto;
+	}
+form{
+	text-align:center;
+	width:240px;
+	border:1px solid #ddd;
+	float:left;
+	box-shadow:0 0 8px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 0 8px rgba(0,0,0,0.1);
+	-moz-box-shadow:0 0 8px rgba(0,0,0,0.1);
+	}
+dt {
+	float:left;
+	width:80px;
+	font-size:90%;
+	padding:3px 5px;
+	text-align:center;
+	height:22px;
+	overflow:hidden;
+	/*border-right:1px solid rgb(180,180,180);*/
+}
+dd {
+	text-align:center;
+	font-size:90%;
+	padding:3px 10px 3px 0;
+	height:22px;
+}
+dd select{
+	width:60px;
+}
+dl > *:nth-child(4n){
+	background-color:#eee;
+}
+form .options {
+	background-color:#ddd;
+    padding: 8px 0 0 0;
+	}
+form p {
+    background-color:#ddd;
+}
+form .options .label {
+    cursor: pointer;
+    font-weight: bold;
+    color: #666;
+}
+form .options .show .label {
+    color: #333;
+}
+form .options > ul > li {
+    padding-left: 32px;
+    background: transparent url(../images/triangle.png) scroll no-repeat 16px 5px;
+    line-height: 18px;
+}
+form .options > ul > li.show {
+    background-image: url(../images/triangle2.png);
+}
+form .options li ul {
+    display: none;
+    list-style-type: square;
+    margin-left: 2em;
+}
+form .options li.show ul {
+    display: block;
+}
+form .options li{
+    font-size:12px;
+    padding:2px 0;
+    text-align: left;
+	}
+form li label{
+	color:#333;
+}
+form input[type="submit"],
+form input[type="button"]{
+	width:80px;
+	margin: 3px;
+	clear:both;
+	}
+form input[type="checkbox"] {
+	margin-right:5px;
+	}
+div#result {
+	float:right;
+	padding: 0 16px;
+	width:406px;
+}
+div#result h1, p{
+	font-weight:bold;
+	font-size:80%;
+	line-height:1.6;
+	clear:both;
+}
+div#result.loading h1 {
+    background: transparent url(../images/loader.gif) scroll no-repeat 100% 50%;
+}
+/* .loaded { */
+/*     -webkit-animation-name: 'apper'; */
+/*     -webkit-animation-duration: 1s; */
+/*     -moz-animation-name: 'apper'; */
+/*     -moz-animation-duration: 1s; */
+/*     -ms-animation-name: 'apper'; */
+/*     -ms-animation-duration: 1s; */
+/*     -o-animation-name: 'apper'; */
+/*     -o-animation-duration: 1s; */
+/*     animation-name: 'apper'; */
+/*     animation-duration: 1s; */
+/* } */
+div#result ol{
+	list-style-type:none;
+	margin:1.5em 0 1.5em 1em;
+	line-height:1.8;
+	}
+div.result li{
+	border-bottom:1px solid #ddd;
+	padding:0 0 0 5px;
+	position:relative;
+	clear:both;
+    font-size:95%;
+}
+div.result li:nth-child(even){
+	background-color:#fcfcfc;
+}
+em.trait{
+	font-size:80%;
+	font-weight:bold;
+	float:right;
+	color:#999;
+	}
+	
+address{
+	font-size:80%;
+	text-align:right;
+	padding-top:3em;
+	color:#666;
+	clear:both;
+}
+	
+span.types{
+	font-size:80%;
+	color:#888;
+	margin-left:1em;
+	margin-top:3px;
+	width:12em;
+	display:block;
+	position:absolute;
+	left:8.5em;
+	top:0;
+	}
+	
+span.types span{
+	color:#fff;
+	border-radius:6px;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	padding:2px 4px;
+	margin-right:6px;
+	text-shadow:1px 1px 1px rgb(80,80,80);
+	}
+span .roc{
+	background-color:rgb(194,167,95);
+	}
+span .gro{
+	background-color:rgb(227,203,142);
+	}
+span .gho{
+	background-color:rgb(108,108,161);
+	}
+span .poi{
+	background-color:rgb(155,95,167);
+	}
+span .ste{
+	background-color:rgb(199,212,224);
+	}
+span .fir{
+	background-color:rgb(220,89,73);
+	}
+span .wat{
+	background-color:rgb(115,184,234);
+	}
+span .ele{
+	background-color:rgb(242,212,121);
+	}
+span .nor{
+	background-color:rgb(184,184,149);
+	}
+span .fig{
+	background-color:rgb(135,53,48);
+	}
+span .fly{
+	background-color:rgb(178,189,234);
+	}
+span .bug{
+	background-color:rgb(189,184,95);
+	}
+span .gra{
+	background-color:rgb(149,199,121);
+	}
+span .psy{
+	background-color:rgb(227,108,155);
+	}
+span .ice{
+	background-color:rgb(184,231,231);
+	}
+span .dra{
+	background-color:rgb(102,135,227);
+	}
+span .dar{
+	background-color:rgb(108,89,78);
+	}
+
+div.ad {
+	float: right;
+	padding: 0 16px;
+	width:406px;
+    text-align:center;
+}
+div.ad li {
+    display: inline;
+}
+div.howto {
+    margin: 1.5em 0 1.5em 1em;
+}
+div.howto p {
+    margin: 0 0 1em 0;
+    font-weight:normal;
+    line-height:1.8;
+}
+
+/* preload images */
+address:after {
+    width: 0px;
+    height: 0px;
+    display: inline;
+    background-image: url(../images/loader.gif);
+}
+
+/* share */
+div.share {
+    position:absolute;
+    top:2em;
+    right:2em;
+}
+.share li {
+    float:right;
+    margin:0 8px;
+}
+.share #tweetlink {
+    display:block;
+    background: #fafafa url(../images/twitter_newbird_blue.png) scroll no-repeat 0 50%;
+    background-image: url(../images/twitter_newbird_blue.png),
+                      -webkit-gradient(linear, left top, left bottom,                                from(#fff), to(#ddd));
+    background-image: url(../images/twitter_newbird_blue.png),
+                      -moz-linear-gradient(#fff, #ddd);
+    background-image: url(../images/twitter_newbird_blue.png),
+                      -o-linear-gradient(#fff, #ddd);
+    background-repeat: no-repeat, repeat;
+    background-position: 4px 50%, 0 0;
+    font-weight:bold;
+    font-size:11px;
+    line-height:18px;
+    padding: 1px 4px 0px 22px;
+    text-decoration:none;
+    color:#333;
+    border:1px solid #ccc;
+    border-radius:3px;
+}
+.share #tweetlink:hover {
+    background-color:#eee;
+    background-image: url(../images/twitter_newbird_blue.png);
+    background-image: url(../images/twitter_newbird_blue.png),
+                      -webkit-gradient(linear, left top, left bottom,
+                                       from(#fafafa), to(#d8d8d8));
+    background-image: url(../images/twitter_newbird_blue.png),
+                      -moz-linear-gradient(#fafafa, #d8d8d8);
+    background-image: url(../images/twitter_newbird_blue.png),
+                      -o-linear-gradient(#fafafa, #d8d8d8);
+    border-color:#bbb;
+}

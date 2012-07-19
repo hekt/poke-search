@@ -1,0 +1,11 @@
+_*
+*~
+\#*#
+*.bak.py
+*.pyc
+*.swp
+*.coffee.js
+.#*
+.DS_Store
+backup
+.git.bak

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block result %}
+{% spaceless %}
+<div class="result" id="result">
+  <h1>検索結果: {{ count }}匹</h1>
+  <ol>
+    {% for result in result_list %}
+    <li>{{ result.name }}<span class="types">
+        <span class="{{ result.types.0.en }}">{{ result.types.0.ja }}</span>
+        {% ifequal result.types|length 2 %}
+        <span class="{{ result.types.1.en }}">{{ result.types.1.ja }}</span>
+        {% endifequal %}
+      </span>
+      {% if result.trait %}
+      <em class="trait">{{ result.trait }}</em>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+</div>
+{% endspaceless %}
+{% endblock %}
+
+{% block ajax %}
+{% endblock %}
